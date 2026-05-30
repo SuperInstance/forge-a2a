@@ -58,6 +58,7 @@ pub enum ForgePayload {
 }
 
 impl ForgePayload {
+    #[allow(dead_code)]
     fn as_status(&self) -> Option<(&str, usize, usize, f64)> {
         match self {
             ForgePayload::Status {
